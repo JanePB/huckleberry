@@ -12,7 +12,8 @@ body {
 /* Add styles here! */
 
 .max-width-wrapper {
-  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .title {
@@ -25,6 +26,7 @@ body {
   font-size: 1.5rem;
   padding: 16px;
   padding-top: 96px;
+  max-width: 400px;
 }
 
 .indented-heading {
@@ -33,10 +35,15 @@ body {
   font-size: 1.5rem;
   padding: 16px 64px;
   text-align: center;
-  max-width: fit-content;
+  width: fit-content;
   margin-top: -8px;
   margin-left: -64px;
   text-align: left;
+}
+
+header {
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
+
 }
 
 .card {
@@ -47,56 +54,11 @@ body {
   padding: 16px;
 }
 
-section {
-  border-top: 8px solid hsl(0deg, 0%, 40%);
+main {
   background-color: hsl(0deg, 0%, 60%);
-  padding-top: 50px;
+  padding: 96px 0;
 }
 
 strong {
   color: hsl(160deg, 100%, 30%);
-}
-
-@media all and (min-width: 768px) {
-
-  .intro-chunk {
-    height: 100%;
-    padding: 64px;
-    padding-top: 64px;
-    max-width: 75%;
-  }
-
-  .max-width-wrapper {
-    height: 50%;
-  }
-
-  .card {
-    padding: 64px;
-  }
-
-  .indented-heading {
-    text-align: center;
-    margin-top: -25px;
-  }
-}
-
-@media all and (min-width:1200px) {
-
-  .intro-chunk {
-    max-width: 600px;
-    margin: auto;
-    padding: 32px;
-  }
-
-  .card {
-    max-width: 600px;
-    margin: auto;
-    padding: 32px;
-  }
-
-  .indented-heading {
-    margin-left: -50px;
-    padding: 16px 34px;
-    max-width: 80%;
-  }
 }
